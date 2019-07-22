@@ -98,29 +98,8 @@ But there are downsides as well:
     the network, since the primary must first write the files, and
     then each replica must copy them.
 
-# Build and install
-
-This has only been tested on Linux:
-
-To run the server, run `./build.py package`, which will build the
-installable bits at `build/luceneserver-0.1.0-SNAPSHOT.zip`.
-
-Unzip that somewhere, `cd luceneserver-0.1.0-SNAPSHOT` and run `java
--cp "lib/*" org.apache.lucene.server.Server`.  Make sure you put
-double quotes around that `"lib/*"` so java sees that asterisk and not
-your shell!
-
 # Live documentation
 
-Once the server is running, load `http://localhost:4000/docs` to see
+Once the server is running, load `http://localhost:5000/docs` to see
 minimial documentation of all REST commands and their accepted
 parameters.
-
-# Example indexing tool
-
-The `scripts/indexTaxis.py` shows an example of using a Python client
-to bulk-index documents from the [New York City taxi ride
-data](http://www.nyc.gov/html/tlc/html/about/trip_record_data.shtml),
-optionally spawning replicas as well.  It will build the release
-artifact, install it, launch it, download the taxis document source
-(first 1 M documents), and index them.
