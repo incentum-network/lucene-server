@@ -1,6 +1,6 @@
 # Needs some love
 
-This was copied from https://github.com/mikemccand/luceneserver. We mavenized it 
+This was copied from [Lucene Server](https://github.com/mikemccand/luceneserver). We mavenized it 
 and got it running under spring boot.
 
 ### The good
@@ -18,6 +18,12 @@ highlighting, suggestions, etc.
 3. General code cleanup, using Java idioms, better library choices, etc.
 4. Upgrade Lucene to more current version.
 4. See the issues or project for tasks.
+
+## Used with Praxis Spaces
+
+[Praxis Spaces](https://github.com/incentum-network/praxis-spaces) uses these services 
+for the server side functionality.
+
 
 # Lucene Server
 
