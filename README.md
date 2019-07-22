@@ -13,7 +13,8 @@ need.
 ### Needs work in some areas
 
 1. JSON handling is mostly inline parsed, needs a better lib.
-2. We don't need many of the features, like replicas, and NRT indexing.
+2. We don't need many of the features, like replicas, and NRT indexing, bulk loading, 
+highlighting, suggestions, etc.
 3. General code cleanup, using Java idioms, better library choices, etc.
 4. See the issues or project for tasks.
 
