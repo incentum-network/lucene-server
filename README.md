@@ -25,6 +25,7 @@ highlighting, suggestions, etc.
 for the server side functionality.
 
 
+# Old Readme follows
 # Lucene Server
 
 This project provides a simple, example HTTP server on top of [Apache
