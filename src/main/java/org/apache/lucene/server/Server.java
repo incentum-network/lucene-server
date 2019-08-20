@@ -736,10 +736,11 @@ public class Server {
 
   /** Command-line entry. */
   public static void main(String[] args) throws Exception {
+    String spaceDir = args[0];
     int maxHTTPThreadCount = 2*Runtime.getRuntime().availableProcessors();
     List<String> bindIPPorts = new ArrayList<>();
-    Path stateDir = Paths.get(System.getProperty("user.home"), ".spaces-test", "global-state");
-    for(int i=0;i<args.length;i++) {
+    Path stateDir = Paths.get(System.getProperty("user.home"), spaceDir, "global-state");
+    for(int i=1;i<args.length;i++) {
       if (args[i].equals("-maxHTTPThreadCount")) {
         if (args.length == i+1) {
           throw new IllegalArgumentException("no value specified after -maxHTTPThreadCount");
